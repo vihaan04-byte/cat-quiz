@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap');
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   background: linear-gradient(135deg, #fceabb, #f8b500);
   padding: 50px;
@@ -15,7 +15,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@ body {
   text-align: left;
   font-size: 15px;
   line-height: 1.5;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
 #privacyContent h2 {
@@ -42,7 +42,7 @@ body {
   padding: 10px 20px;
   font-size: 14px;
   font-weight: bold;
-  background-color: #4caf50;
+  background-color: #4CAF50;
   color: white;
   border: none;
   border-radius: 8px;
@@ -54,7 +54,7 @@ body {
 }
 
 h1 {
-  font-family: "Permanent Marker", cursive;
+  font-family: 'Permanent Marker', cursive;
   font-size: 40px;
   margin-bottom: 10px;
   color: #2a2a2a;
@@ -77,22 +77,15 @@ h1 {
 }
 
 .cats img {
-  width: auto;          /* Keep natural width */
-  max-width: 300px;     /* Prevent from getting too big */
-  height: auto;         /* Maintain aspect ratio */
-  max-height: 300px;    /* Optional: prevent vertical overflow */
+  width: auto;          
+  max-width: 300px;     
+  height: auto;         
+  max-height: 300px;    
   cursor: pointer;
   border-radius: 15px;
   transition: transform 0.2s, opacity 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  object-fit: contain;  /* Show full image without cropping */
-}
-
-}
-
-.cats img:hover {
-  transform: scale(1.07);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  object-fit: contain;  
 }
 
 #result {
@@ -118,7 +111,7 @@ h1 {
 }
 
 #feedback button:first-child {
-  background-color: #4caf50;
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -144,11 +137,8 @@ h1 {
 }
 
 @media (max-width: 600px) {
-  .cats {
-    flex-direction: column;
-  }
-
   .cats img {
-    max-width: 80%;
+    max-width: 90%;
+    max-height: 250px;
   }
 }
