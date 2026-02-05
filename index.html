@@ -1,0 +1,41 @@
+<h1>Can your choice in cats reveal where you live?</h1>
+
+<!-- Privacy Modal -->
+<div id="privacyModal">
+  <div id="privacyContent">
+    <h2>⚠️ Heads up!</h2>
+    <p>
+      This project uses your <em>approximate location</em> (country/region/city)
+      based on your IP address to make a fun guess.
+    </p>
+    <p>
+      <strong>I do NOT collect, store, or save any data.</strong><br>
+      Everything runs in your browser only.
+    </p>
+    <p>
+      <strong>Your browser may show a warning — that's normal. Just click continue</strong>
+      You can inspect this code to verify 🙂
+    </p>
+    <button id="acceptPrivacy">I understand</button>
+  </div>
+</div>
+
+<p id="question">Which cat feels right?</p>
+
+<div class="cats">
+  <img id="leftCat" onclick="answer()">
+  <img id="rightCat" onclick="answer()">
+</div>
+
+<p id="result"></p>
+
+<div id="feedback" style="display:none; margin-top: 20px;">
+  <p>Was Whiskers correct?</p>
+  <button onclick="submitFeedback(true)">Yes 😺</button>
+  <button onclick="submitFeedback(false)">No 😿</button>
+  <p id="feedbackResponse"></p>
+</div>
+
+<p id="credits" style="margin-top: 30px; font-size: 14px;">
+  Inspired by <a href="https://www.geokitten.com/" target="_blank">GeoKitten</a>
+</p>
